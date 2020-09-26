@@ -1,23 +1,42 @@
+<div class="container-fluid">
 <h1>Quotes</h1>
-
 <ul>
-  <div> 
-    <li *ngFor= 'let quote of quote;let i=index' >
+  <div class="card text-center">
+    <li *ngFor='let quote of quote;let i=index'>
+      <div class="cardheader">
       My quot is: {{quote.name}}
+      </div>
       
       <div>
         <span>
-              <button (click)="increment(i)"> Upvote: {{quote.upvote}} </button>
-            
-          </span>
-          <span>
-            
-            <button (click)="decrement(i)"> Downvote: {{quote.downvote}} </button>
-          </span> 
-    </div>
+          <button (click)="increment(i)" class="btn btn-success"> Upvote: {{quote.upvote}} </button>
+        </span>
+        <span>
+          <button (click)="decrement(i)" class="btn btn-danger"> Downvote: {{quote.downvote}} </button>
+        </span>
+      </div>
+      <div class="card-footer">
+        {{quote.date}}
+      </div>
     </li>
   </div>
 </ul>
+</div>
+<!-- <div class="card text-center" *ngFor='let quote of quote;let i=index'>
+  <div class="card-header">
+    {{quote.date}} 
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">{{quote.name}}</p>
+    <div class="class">
+    <button (click)="increment(i)" class="btn btn-success col"> Upvote: {{quote.upvote}} </button>
+    <button (click)="decrement(i)" class="btn btn-danger col"> Downvote: {{quote.downvote}} </button>
+  </div>
+  <div class="card-footer text-muted">
+     {{quote.date}} 
+  </div>
+</div> -->
 
 
 
