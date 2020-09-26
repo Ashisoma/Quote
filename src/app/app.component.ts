@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   // quotes: Quote [] = [
   //  {id:1, name:'Watch finding Nemo'},
-title:'Quotes'
+//title:'Quotes'
 
 }
 // function for increasin the counter..app.html has the html part.

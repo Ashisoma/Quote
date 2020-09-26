@@ -2,7 +2,7 @@
 <h1>Quotes</h1>
 <ul>
   <div class="card text-center">
-    <li *ngFor='let quote of quote;let i=index'>
+    <div *ngFor='let quote of quote;let i=index'>
       <div class="cardheader">
       My quot is: {{quote.name}}
       </div>
@@ -18,7 +18,7 @@
       <div class="card-footer">
         {{quote.date}}
       </div>
-    </li>
+    </div>
   </div>
 </ul>
 </div>
