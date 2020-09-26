@@ -1,13 +1,23 @@
 <h1>Quotes</h1>
-<div class="container">
-  <div class="number-display">
-    {{counter}}
+
+<ul>
+  <div> 
+    <li *ngFor= 'let quote of quote;let i=index' >
+      My quot is: {{quote.name}}
+      
+      <div>
+        <span>
+              <button (click)="increment(i)"> Upvote: {{quote.upvote}} </button>
+            
+          </span>
+          <span>
+            
+            <button (click)="decrement(i)"> Downvote: {{quote.downvote}} </button>
+          </span> 
+    </div>
+    </li>
   </div>
-    <button (click)="increment()"> Upvote </button>
- </div>
-  <div class="container">
-  <div class="number-display">
-    {{counterD}}
-  </div>
-    <button (click)="decrement()"> Downvote </button>
- </div>
+</ul>
+
+
+
