@@ -6,37 +6,22 @@
       <div *ngFor='let quote of quote;let i=index' class="card text-center">
         <div class="cardheader text-center pt-3">
           <h5> {{quote.name}}</h5><br>
-          <h4 class="text-muted">{{quote.author}}</h4>
-        </div>
-        <div>
-          <span (click)="increment(i)" class="btn btn-success"> Upvote: {{quote.upvote}} </span>
-          <span>
-            <button (click)="decrement(i)" class="btn btn-danger"> Downvote: {{quote.downvote}} </button>
-          </span>
-        </div>
-        <div class="card-footer">
-          {{quote.date}}
-        </div>
+          
+          <p (click)='toggleDetails(i)' class="btn btn-info">See More</p>
+          <div>
+            <span (click)="increment(i)" class="btn btn-success"> Upvote: {{quote.upvote}} </span>
+            <span>
+              <button (click)="decrement(i)" class="btn btn-danger"> Downvote: {{quote.downvote}} </button>
+            </span>
+          </div>
+          <div class="card-footer">
+            {{quote.completeDate | date | uppercase}}
+          </div>
+        </div>   
       </div>
     </div>
-
     <div class="col-md-6">
-    
+    <app-quote-form ></app-quote-form>
     </div>
   </div>
 </div>
-<!-- <div class="card text-center" *ngFor='let quote of quote;let i=index'>
-  <div class="card-header">
-    {{quote.date}} 
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">{{quote.name}}</p>
-    <div class="class">
-    <button (click)="increment(i)" class="btn btn-success col"> Upvote: {{quote.upvote}} </button>
-    <button (click)="decrement(i)" class="btn btn-danger col"> Downvote: {{quote.downvote}} </button>
-  </div>
-  <div class="card-footer text-muted">
-     {{quote.date}} 
-  </div>
-</div> -->
