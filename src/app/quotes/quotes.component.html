@@ -4,8 +4,9 @@
   <div class="p-5 row">
     <div class="col-md-6">
       <div *ngFor='let quote of quote;let i=index' class="card text-center">
-        <div class="cardheader text-center">
-          <h3> {{quote.name}}</h3>
+        <div class="cardheader text-center pt-3">
+          <h5> {{quote.name}}</h5><br>
+          <h4 class="text-muted">{{quote.author}}</h4>
         </div>
         <div>
           <span (click)="increment(i)" class="btn btn-success"> Upvote: {{quote.upvote}} </span>

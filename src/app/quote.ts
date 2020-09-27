@@ -11,5 +11,6 @@ export class Quote {
   this.id = 0;
   this.downvote = 0;
   this.date = date;
+  this.author= author;
   }
 }
