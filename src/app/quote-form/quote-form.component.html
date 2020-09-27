@@ -11,8 +11,9 @@
         <label for="quote">Quote</label>
         <textarea class="form-control" id="quote"></textarea>
     </div>
-    <div   class="alert alert-danger">
+    <div class="alert alert-danger">
+        <input type="date" required id="date">
         <p>Date is required</p>
-      </div>
-  <button type="submit" class="btn btn-success">Add Goal</button>
+    </div>
+    <button type="submit"  (click)='submitQuote()' class="btn btn-success">Add Quote</button>
 </div>
