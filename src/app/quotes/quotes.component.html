@@ -1,8 +1,8 @@
 <div class="container-fluid">
-<h1>Quotes</h1>
-<ul>
-  <div class="card text-center">
-    <div *ngFor='let quote of quote;let i=index'>
+<h1 class="text-center">Quotes</h1>
+
+  
+    <div *ngFor='let quote of quote;let i=index' class="card text-center pt-3 pb-5">
       <div class="cardheader">
       My quot is: {{quote.name}}
       </div>
@@ -19,8 +19,6 @@
         {{quote.date}}
       </div>
     </div>
-  </div>
-</ul>
 </div>
 <!-- <div class="card text-center" *ngFor='let quote of quote;let i=index'>
   <div class="card-header">
