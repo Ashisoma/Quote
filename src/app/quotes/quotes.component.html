@@ -1,24 +1,28 @@
 <div class="container-fluid">
-<h1 class="text-center">Quotes</h1>
+  <h1 class="text-center">Quotes</h1>
 
-  
-    <div *ngFor='let quote of quote;let i=index' class="card text-center pt-3 pb-5">
-      <div class="cardheader">
-      My quot is: {{quote.name}}
-      </div>
-      
-      <div>
-        <span>
-          <button (click)="increment(i)" class="btn btn-success"> Upvote: {{quote.upvote}} </button>
-        </span>
-        <span>
-          <button (click)="decrement(i)" class="btn btn-danger"> Downvote: {{quote.downvote}} </button>
-        </span>
-      </div>
-      <div class="card-footer">
-        {{quote.date}}
+  <div class="p-5 row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quote;let i=index' class="card text-center">
+        <div class="cardheader text-center">
+          <h3> {{quote.name}}</h3>
+        </div>
+        <div>
+          <span (click)="increment(i)" class="btn btn-success"> Upvote: {{quote.upvote}} </span>
+          <span>
+            <button (click)="decrement(i)" class="btn btn-danger"> Downvote: {{quote.downvote}} </button>
+          </span>
+        </div>
+        <div class="card-footer">
+          {{quote.date}}
+        </div>
       </div>
     </div>
+
+    <div class="col-md-6">
+    
+    </div>
+  </div>
 </div>
 <!-- <div class="card text-center" *ngFor='let quote of quote;let i=index'>
   <div class="card-header">
@@ -35,6 +39,3 @@
      {{quote.date}} 
   </div>
 </div> -->
-
-
-
