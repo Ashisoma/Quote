@@ -1,9 +1,15 @@
 
 <p>{{quote.author}}</p>
 <div>
-    <span (click)="increment(true)" class="btn btn-success"> Upvote: {{likes}} </span>
-      <button (click)="decrement(true)" class="btn btn-danger"> Downvote: {{dislikes}} </button>
-<button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+<span class="pr-3">
+  <button (click)="increment(true)" class="btn btn-success"> <i class="far fa-thumbs-up"></i>Like: {{likes}}</button>
+</span>
+<span class="pr-3">
+<button (click)="decrement(true)" class="btn btn-danger "> <i class="far fa-thumbs-down"></i>Dislike: {{dislikes}} </button>
+</span>
+<span class="pl-5">
+<button (click)= 'quoteDelete(true)' class="btn btn-outline-danger"><i class="fas fa-trash"></i>Delete</button>
+</span>
   </div>
 
 

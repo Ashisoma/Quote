@@ -15,7 +15,7 @@ export class QuoteDetailComponent implements OnInit {
   quoteDelete(deleteIt:boolean){
    this.deleteQuote.emit(deleteIt)
   }
-  counted(click){}
+  //counted(click){}
   
   increment(clik) {
     if (clik){ this.likes++;}

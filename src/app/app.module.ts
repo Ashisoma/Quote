@@ -8,6 +8,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { HighlightDirective } from './highlight.directive';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { DateCountPipe } from './date-count.pipe';
 
 
 
@@ -17,7 +18,8 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
     QuotesComponent,
     HighlightDirective,
     QuoteFormComponent,
-    QuoteDetailComponent
+    QuoteDetailComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
