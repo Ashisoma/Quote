@@ -3,25 +3,21 @@
 
   <div class="p-5 row">
     <div class="col-md-6">
-      <div *ngFor='let quote of quote;let i=index' class="card text-center">
-        <div class="cardheader text-center pt-3">
+      <div *ngFor='let quote of quotes;let i=index' class="card text-center">
+        <div class="cardheader text-center pt-3 bg-secondary">
           <h5> {{quote.name}}</h5><br>
           
           <p (click)='toggleDetails(i)' class="btn btn-info">See More</p>
-          <div>
-            <span (click)="increment(i)" class="btn btn-success"> Upvote: {{quote.upvote}} </span>
-            <span>
-              <button (click)="decrement(i)" class="btn btn-danger"> Downvote: {{quote.downvote}} </button>
-            </span>
-          </div>
+          <app-quote-detail *ngIf='quote.showDetails'[quote]='quote'></app-quote-detail>
+          
           <div class="card-footer">
-            {{quote.completeDate | date | uppercase}}
+            {{quote.submitDate | date | uppercase}}
           </div>
         </div>   
       </div>
     </div>
     <div class="col-md-6">
-    <app-quote-form ></app-quote-form>
+    <app-quote-form (addQuote)='addNewQuote($event)' ></app-quote-form>
     </div>
   </div>
 </div>

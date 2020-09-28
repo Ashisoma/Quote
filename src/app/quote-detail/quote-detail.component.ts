@@ -7,21 +7,29 @@ import { Quote } from '../quote'
 })
 export class QuoteDetailComponent implements OnInit {
 
-  @Input() quote: Quote
-  @Output() isComplete = new EventEmitter<boolean>();
+  @Input() quote: Quote;
+  likes: number =0;
+  dislikes: number =0;
+  @Output() deleteQuote = new EventEmitter<boolean>();
 
-  quoteComplete(complete:boolean){
-    this.isComplete.emit(complete)
+  quoteDelete(deleteIt:boolean){
+   this.deleteQuote.emit(deleteIt)
   }
-
-  quoteDelete(complete:boolean){
-    this.isComplete.emit(complete)
-  }
+  counted(click){}
   
+  increment(clik) {
+    if (clik){ this.likes++;}
+    return this.likes
+  }
+
+  decrement(clik) {
+    if (clik){ this.dislikes++;}
+    return this.dislikes
+  }
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
