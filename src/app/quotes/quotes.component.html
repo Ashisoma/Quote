@@ -12,7 +12,7 @@
           <app-quote-detail *ngIf='quote.showDetails'[quote]='quote' (deleteQuote)='quoteDelete($event,i)'></app-quote-detail>
           
           <div class="card-footer">
-            {{quote.submitDate | date | uppercase}}
+            {{quote.submitDate | dateCount | uppercase}}
           </div>
         </div>   
       </div>
