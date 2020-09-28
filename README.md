@@ -7,7 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This web application allows a user to :
 1. Add a quote,
 2. Delete a quote,
-3. Like or Dislike a quote
+3. Like or Dislike a quote.
+
 The application shows date when the quote was put and how many days since it was put there. 
 
 
@@ -15,7 +16,7 @@ The application shows date when the quote was put and how many days since it was
 To visit our website and check out our designs, just follow the simple steps below:
 1. Make sure you are connected to the internet.
 2. Open your web browser,
-3. Finally click on this link https://ashisoma.github.io/Dilani-Studio/
+3. Finally click on this link https://ashisoma.github.io/Quote/
 
 ## Development server
 
@@ -36,6 +37,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Support and Contact details
+For any support required, concerns or ideas and any discrepancies on running the code make sure to reach out to me prefferably via my email address : okalionesmus@gmail.com 
 
 ## Further help
 
