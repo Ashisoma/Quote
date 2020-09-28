@@ -1,6 +1,21 @@
 # Quotes
+### By **Onesmus Okali**
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+
+## Description
+This web application allows a user to :
+1. Add a quote,
+2. Delete a quote,
+3. Like or Dislike a quote
+The application shows date when the quote was put and how many days since it was put there. 
+
+
+## SetUp/Installation Requirements
+To visit our website and check out our designs, just follow the simple steps below:
+1. Make sure you are connected to the internet.
+2. Open your web browser,
+3. Finally click on this link https://ashisoma.github.io/Dilani-Studio/
 
 ## Development server
 
