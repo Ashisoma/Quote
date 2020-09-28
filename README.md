@@ -44,3 +44,7 @@ For any support required, concerns or ideas and any discrepancies on running the
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### Licence
+* MIT Licencing
+Copyright (c) 2020, **Onesmus Okali**
