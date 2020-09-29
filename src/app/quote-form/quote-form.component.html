@@ -6,14 +6,14 @@
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
             <label for="name">Author</label>
-            <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+            <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.author" name="name" #name='ngModel' required>
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
               <p>Author is required</p>
             </div>
         </div>
     <div>
         <label for="quote">Quote</label>
-           <textarea class="form-control" id="author" rows="4" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required></textarea>
+           <textarea class="form-control" id="author" rows="4" [(ngModel)]="newQuote.name" name="author" #author="ngModel" required></textarea>
     </div>
     <div class="alert alert-danger">
         <input type="date" required id="date">
